@@ -1,0 +1,182 @@
+@import "breakpoints";
+@import "../variables/variables";
+
+@mixin text-splash() {
+  font-size: $font-size-desktop-splash;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-splash} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-splash} * .7);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-splash} * .6);
+  }
+
+  @include size('phone') {
+    font-size: calc(#{$font-size-desktop-splash} * .5);
+  }
+}
+
+@mixin h1() {
+  font-size: $font-size-desktop-h1;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-h1} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-h1} * .7);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-h1} * .8);
+  }
+
+  @include size('phone') {
+    font-size: calc(#{$font-size-desktop-h1} * .7);
+  }
+}
+
+@mixin h2() {
+  font-size: $font-size-desktop-h2;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-h2} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-h2} * .7);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-h2} * .8);
+  }
+
+  @include size('phone') {
+    font-size: calc(#{$font-size-desktop-h2} * .7);
+  }
+}
+
+@mixin h3() {
+  font-size: $font-size-desktop-h3;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-h3} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-h3} * .8);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-h3} * .8);
+  }
+
+  @include size('phone') {
+    font-size: calc(#{$font-size-desktop-h3} * .7);
+  }
+}
+
+@mixin h4() {
+  font-size: $font-size-desktop-h4;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-h4} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-h4} * .8);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-h4} * .8);
+  }
+
+  @include size('phone') {
+    font-size: calc(#{$font-size-desktop-h4} * .7);
+  }
+}
+
+@mixin h5() {
+  font-size: $font-size-desktop-h5;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-h5} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-h5} * .8);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-h5} * .8);
+  }
+
+  @include size('phone') {
+    font-size: calc(#{$font-size-desktop-h5} * .7);
+  }
+}
+
+@mixin h6() {
+  font-size: $font-size-desktop-h6;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-h6} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-h6} * .8);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-h6} * .8);
+  }
+
+  @include size('phone') {
+    font-size: calc(#{$font-size-desktop-h6} * .7);
+  }
+}
+
+@mixin p() {
+  font-size: $font-size-desktop-p;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-p} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-p} * .8);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-p} * .9);
+  }
+
+  @include size('phone') {
+    font-size: calc(#{$font-size-desktop-p} * 1.1);
+  }
+}
+
+@mixin text-small() {
+  font-size: $font-size-desktop-small;
+
+  @include size('desktop-large') {
+    font-size: calc(#{$font-size-desktop-small} * .9);
+  }
+
+  @include size('laptop') {
+    font-size: calc(#{$font-size-desktop-small} * .8);
+  }
+
+  @include size('tablet') {
+    font-size: calc(#{$font-size-desktop-small} * .9);
+  }
+
+  @include size('phone') {
+    font-size: $font-size-desktop-small;
+  }
+}

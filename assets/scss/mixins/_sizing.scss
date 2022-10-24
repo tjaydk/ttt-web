@@ -1,0 +1,31 @@
+@import "../variables/variables";
+
+// Sizing
+@mixin full-size() {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin full-view-port() {
+  height: $viewport-full-height;
+  width: 100%;
+}
+
+@mixin image-cover() {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: contain;';
+}
+
+@mixin image-contain {
+  @include image-cover();
+  object-fit: contain;
+  font-family: 'object-fit: contain;';
+}
+
+@mixin single-line() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

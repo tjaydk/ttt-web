@@ -1,0 +1,19 @@
+https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBEiJ_YyEZzpRHAxKpEpWtGUwCwHhh-BBc
+
+{
+	"requests": [
+		{
+			"image": {
+				"source": {
+					"imageUri": "https://ingvardchristensen.dk/media/catalog/product/S/e/Serie-7-3107-7er-Stolen-Stol-Forsidepolstret-L%C3%A6der-Sort-Republic-Of-Fritz-Hansen-Arne-Jacobsen-_3.jpg"
+				}
+			},
+			"features": [
+				{
+					"type": "WEB_DETECTION",
+					"maxResults": 10
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,47 @@
+@import "../variables/variables";
+
+// Gradient
+@mixin linear-gradient($direction, $color-stops...) {
+  background: linear-gradient($direction, $color-stops);
+}
+
+// Positions
+@mixin position($position: absolute, $top: 0, $left: 0) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+
+// Alignments
+@mixin c-align($position: absolute) {
+  @include position($position);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin h-align($position: absolute) {
+  @include position($position);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin v-align($position: absolute) {
+  @include position($position);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Background
+@mixin background($background: $brand-color-primary) {
+  background: $background;
+  min-height: $viewport-full-height;
+}
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

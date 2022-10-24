@@ -1,0 +1,198 @@
+// Synchronization
+@keyframes fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeWithPause {
+  0%          { opacity: 0; }
+  25%         { opacity: 1; }
+  50%, 100%   { opacity: 0; }
+}
+
+@keyframes bounceIn {
+  0%    { transform-origin: center; transform: scale(.5) }
+  100%  { transform-origin: center; transform: scale(1) }
+}
+
+@keyframes shine {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes shineDelayed {
+  0%   { transform: translateX(-100%); }
+  10%  { transform: translateX(100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes shineSkew {
+  0%   { transform: translateX(-110%) skew(-20deg); }
+  100% { transform: translateX(110%) skew(-20deg); }
+}
+
+@keyframes gradientLoader {
+  0%   { left: -100%; opacity: .8 }
+  50%  { left: 0; opacity: .5 }
+  100% { left: 100%; opacity: 1 }
+}
+
+@keyframes dropDownCentered {
+  0%    { transform: translate(-50%, -60%) }
+  100%  { transform: translate(-50%, -50%) }
+}
+
+@keyframes slideFade {
+  0%    { transform: translateX(100%); opacity: 0 }
+  100%  { transform: translateX(0); opacity: 1 }
+}
+
+@keyframes slideUp {
+  0%    { transform: translateY(100%); }
+  100%  { transform: translateY(0); }
+}
+
+@keyframes slideUpFade {
+  0%    { transform: translateY(100%); opacity: 0 }
+  100%  { transform: translateY(0); opacity: 1 }
+}
+
+@keyframes slideUpFadeCentered {
+  0%    { transform: translateY(100%); opacity: 0 }
+  100%  { transform: translateY(-50%); opacity: 1 }
+}
+
+@keyframes dropDownFade {
+  0%    { transform: translateY(-25%); opacity: 0 }
+  50%   { transform: translateY(0%); opacity: 1 }
+  100%  { transform: translateY(25%); opacity: 0 }
+}
+
+@keyframes dropDownFade3d {
+  0%    { transform: rotate3d(0, 1, 0, -2deg); opacity: 0 }
+  100%  { transform: rotate3d(0, 1, 0, -10deg); opacity: 1 }
+}
+
+@keyframes dragSlide {
+  0%    { transform: translateX(-20px) }
+  100%  { transform: translateX(0) }
+}
+
+@keyframes toggle {
+  0%    { transform: rotate(0) }
+  25%   { transform: rotate(15deg) }
+  75%   { transform: rotate(-15deg) }
+  100%  { transform: rotate(0) }
+}
+
+@keyframes spin {
+  0%    { transform: rotate(0)}
+  50%   { transform: rotate(180deg)}
+  100%  { transform: rotate(360deg)}
+}
+
+@keyframes gradientSpin {
+  0%    { transform: translate(0,0) scale(6) rotate(0deg) }
+  25%   { transform: translate(0,-100%) scale(6) rotate(90deg) }
+  50%   { transform: translate(-100%,-100%) scale(6) rotate(180deg) }
+  75%   { transform: translate(-100%,0) scale(6) rotate(270deg) }
+  100%  { transform: translate(0,0) scale(6) rotate(360deg) }
+}
+
+@keyframes indicatorShrink {
+  from  { max-height: 10px; box-shadow: 0 0 15px 0 $brand-color-white; }
+  to    { max-height: 4px; box-shadow: 0 0 5px 0 $brand-color-white; }
+}
+
+@keyframes detailsDropDown {
+  from  { top: 0; opacity: 0; box-shadow: none; }
+  to    { top: 100%; opacity: 1; box-shadow: $box-shadow-far; }
+}
+
+@keyframes fadeOut {
+  from    { opacity: 1 }
+  to      { opacity: 0 }
+}
+
+@keyframes colorShiftGray {
+  0%      { filter: hue-rotate(0) }
+  50%     { filter: hue-rotate(5deg) }
+  100%    { filter: hue-rotate(0) }
+}
+
+@keyframes clipPathCircle {
+  0%      { clip-path: circle(0) }
+  50%     { clip-path: circle(5%) }
+  100%    { clip-path: circle(10%) }
+}
+
+@keyframes clipPathCircleFull {
+  0%      { clip-path: circle(0) }
+  50%     { clip-path: circle(25%) }
+  100%    { clip-path: circle(100%) }
+}
+
+@keyframes wiggle {
+  0%    { transform: scale(1) rotate(0deg) }
+  25%   { transform: scale(1) rotate(-15deg) }
+  50%   { transform: scale(1.1) rotate(0deg) }
+  75%   { transform: scale(1) rotate(15deg) }
+  100%  { transform: scale(1) rotate(0deg) }
+}
+
+@keyframes wiggleWithPause {
+  0%    { transform: scale(1) rotate(0deg) }
+  5%    { transform: scale(1) rotate(-2deg) }
+  10%   { transform: scale(1.01) rotate(0deg) }
+  15%   { transform: scale(1) rotate(2deg) }
+  20%, 100%  { transform: scale(1) rotate(0deg) }
+}
+
+@keyframes headerSlide {
+  from    { transform: scale(1) }
+  to      { transform: scale(1.1) }
+}
+
+@keyframes progressFill {
+  from    { width: 0 }
+  to      { width: 100% }
+}
+
+@keyframes snooky {
+  0%    { transform: rotate3d(0,1,0, 0) }
+  50%   { transform: rotate3d(0,1,.2, -90deg) }
+  100%   { transform: rotate3d(0,1,0, -180deg) }
+}
+
+@keyframes pulse {
+  from    { transform: scale(1); opacity: 1 }
+  to      { transform: scale(2); opacity: 0 }
+}
+
+@keyframes pulseMiniForward {
+  from    { transform: scale(.2); opacity: 0 }
+  to      { transform: scale(1); opacity: 1 }
+}
+
+@keyframes pulseVibrate {
+  0%    { transform: scale(1); opacity: .3 }
+  25%   { transform: scale(1.02); opacity: 0 }
+  50%   { transform: scale(.98); opacity: .5 }
+  75%   { transform: scale(1.02); opacity: 0 }
+  100%   { transform: scale(1); opacity: .3 }
+}
+
+@keyframes rotate {
+  0%      { transform: rotate3d(.5,1,1,0) }
+  100%     { transform: rotate3d(.5,1,1,360deg) }
+}
+
+@keyframes rotateHorizontal {
+  0%      { transform: rotate3d(0,1,0,0) }
+  100%     { transform: rotate3d(0,1,0,360deg) }
+}
+
+@keyframes spinCube {
+  0% { transform: translateZ(-100px) rotateX(  0deg) rotateY(  0deg); }
+  100% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }
+}

@@ -1,0 +1,17 @@
+// Borders
+
+// Box border radius
+$border-radius-box-base:          15px 0 15px 0;
+$border-radius-box-small:         5px 0 5px 0;
+$border-radius-box-left:          15px 5px 0px 15px;
+$border-radius-box-bottom-right:  0 0 15px 0;
+$border-radius-box-bottom-small:  0 0 5px 5px;
+$border-radius-box-top-small:     5px 5px 0 0;
+
+// Input border radius
+$border-radius-input-base:        5px;
+
+// Window border radius
+$border-radius-window-base:       15px 15px 15px 15px;
+$border-radius-window-small:      5px 5px 5px 5px;
+$border-radius-top-small:         5px 5px 0 0;

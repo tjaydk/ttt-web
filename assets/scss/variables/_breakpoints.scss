@@ -1,0 +1,22 @@
+/**
+ * Breakpoints are also used in constants
+ * so ensure if changes are made here
+ * they are also updated in the
+ * breakpoints.js file in
+ * /plugins/constants/breakpoints.js
+ */
+$breakpoint-phone-max-width: 599px;
+$breakpoint-tablet-small-max-width: 767px ;
+$breakpoint-tablet-max-width: 991px;
+$breakpoint-laptop-max-width: 1199px;
+$breakpoint-desktop-max-width: 1200px;
+
+$breakpoints: (
+  'tablet':         ( min-width: $breakpoint-tablet-small-max-width ),
+  'laptop':         ( min-width: $breakpoint-tablet-max-width ),
+  'desktop':        ( min-width: $breakpoint-laptop-max-width ),
+  'desktop-large':  ( min-width: $breakpoint-desktop-max-width )
+) !default;
+
+// Max height
+$viewport-full-height: calc(var(--vh, 1vh) * 100);

@@ -1,0 +1,22 @@
+.tic-board {
+
+  &__content {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+
+    &--DISABLED {
+      pointer-events: none;
+      opacity: .8;
+    }
+  }
+
+  &__square {
+    @include flex-center-content;
+    flex-flow: row wrap;
+    height: 100px;
+    width: 100px;
+    background-color: #8baad3;
+    cursor: pointer;
+  }
+}

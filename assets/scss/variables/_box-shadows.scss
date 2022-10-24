@@ -1,0 +1,15 @@
+// Box shadows
+$box-shadow-base:           0px 0px 5px 0px rgba(0,0,0,0.2);
+$box-shadow-dark:           0px 0px 5px 0px rgba(0,0,0,0.5);
+$box-shadow-far:            0px 3px 15px 0px rgba(0,0,0,0.3);
+$box-shadow-far-top:        0px -2px 10px 0px rgba(0,0,0,0.2);
+
+// Box shadows - inset
+$box-shadow-base-inset:     inset 5px 0px 5px 0px rgba(0,0,0,0.3);
+$box-shadow-dark-inset:     inset 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+$box-shadow-far-inset:     inset 0px 0px 15px 0px rgba(0, 0, 0, 0.7);
+
+// Box shadows - glow
+$box-shadow-glow-secondary: 0px 0px 15px 0px rgba(245,38,109,1);
+$box-shadow-glow-gold: 0px 0px 15px 0px rgb(245, 179, 21);
+$box-shadow-glow-emerald: 0px 0px 15px 0px rgba(255, 255, 255, .5);

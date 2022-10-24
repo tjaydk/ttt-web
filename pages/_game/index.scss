@@ -1,0 +1,30 @@
+.game-page {
+  @include full-view-port;
+  overflow: hidden;
+
+  &__content {
+    @include full-size;
+    @include flex-center-content;
+    flex-flow: row wrap;
+    z-index: 1;
+  }
+
+  &__meta, &__controls {
+    text-align: center;
+    width: 100%;
+  }
+
+  &__modal {
+    @include position();
+    @include full-size;
+    @include flex-center-content;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+
+    &-meta {
+      background-color: #262626;
+      padding: $margin-xl;
+      text-align: center;
+    }
+  }
+}

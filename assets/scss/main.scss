@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;;
+  backface-visibility: hidden;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  min-height: $viewport-full-height;
+  min-width: 100%;
+  margin: 0;
+  background-color: $brand-color-black;
+  color: $brand-color-white;
+}
+
+body > .no-scroll {
+  overflow-y: hidden;
+}

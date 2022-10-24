@@ -1,0 +1,41 @@
+@import "../variables/variables";
+@import "./sizing";
+
+// Inputs
+@mixin input-field() {
+  @extend .input-field;
+
+  &--CLEARABLE {
+    padding-right: 30px;
+  }
+
+  &--VALIDATE {
+    padding-right: 50px;
+  }
+}
+
+@mixin input-placeholder() {
+  @extend .input-placeholder;
+
+  &--INPUT {
+    top: -$margin-lg;
+    font-size: $font-size-desktop-p / 2;
+  }
+}
+
+@mixin input-clear() {
+  @extend .input-clear;
+
+  &--VALIDATE {
+    right: $margin-lg * 2;
+  }
+}
+
+@mixin modal() {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $viewport-full-height;
+  width: 100vw;
+  z-index: 9999;
+}

@@ -1,0 +1,35 @@
+:root {
+  //--brand-color-primary: #700c18;
+  --brand-color-primary: #3d3d3d;
+  --brand-color-secondary: #000000;
+  //--brand-color-secondary: #282828;
+  --brand-color-black: #131313;
+  --brand-color-white: #f5f5f5;
+  --brand-color-info: #86b2ce;
+  --brand-color-success: #5cb787;
+  --brand-color-warning: #b7aa78;
+  --brand-color-error: #c04343;
+
+  --brand-color-red: #8e1921;
+  --brand-color-red-light: #bd4646;
+}
+
+/**
+ * COLOR VARIABLES
+ */
+$brand-color-primary: var(--brand-color-primary);
+$brand-color-secondary: var(--brand-color-secondary);
+$brand-color-black: var(--brand-color-black);
+$brand-color-white: var(--brand-color-white);
+$brand-color-info: var(--brand-color-info);
+$brand-color-success: var(--brand-color-success);
+$brand-color-warning: var(--brand-color-warning);
+$brand-color-error: var(--brand-color-error);
+
+$brand-color-red: var(--brand-color-red);
+$brand-color-red-light: var(--brand-color-red-light);
+
+$bg-color-primary: #262626;
+$bg-color-secondary: #1a1a1a;
+$text-color-primary: #8baad3;
+$text-color-secondary: #757583;

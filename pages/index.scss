@@ -1,0 +1,23 @@
+.index-page {
+  @include full-view-port;
+  overflow: hidden;
+
+  &__content {
+    @include full-size;
+    @include flex-center-content;
+    z-index: 1;
+    text-align: center;
+  }
+
+  &__list {
+
+    &-title {
+      font-size: $font-size-desktop-h1;
+      margin-bottom: $margin-xl;
+    }
+
+    &-button {
+      margin-top: $margin-xl;
+    }
+  }
+}

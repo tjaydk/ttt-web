@@ -1,0 +1,31 @@
+@mixin image-cover() {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  font-family: 'object-fit: contain;';
+}
+
+@mixin image-contain {
+  @include image-cover();
+  object-fit: contain;
+  font-family: 'object-fit: contain;';
+}
+
+@mixin single-line() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin absolute-position($top: 0, $left: 0, $bottom: 0, $right: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  bottom: $bottom;
+  right: $right;
+}
+
+@mixin absolute-position-centered() {
+  @include absolute-position(50%, 50%, auto, auto);
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,9 @@
+// Transition bezier
+$bezier-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+// Transitions
+$transition-bezier: .2s all $bezier-bounce;
+$transition-bezier-slow: .4s all $bezier-bounce;
+$transition-ease: .2s all ease;
+$transition-ease-slow: .4s all ease;
+$transition-ease-slower: .8s all ease;

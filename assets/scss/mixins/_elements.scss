@@ -1,0 +1,40 @@
+// Navigation
+@mixin navigation-position-absolute () {
+  @include position();
+  height: $nav-bar-height;
+  width: 100%;
+}
+
+// Content
+@mixin content-position () {
+  @include full-size();
+  min-height: $viewport-full-height;
+}
+
+// Body
+@mixin body-box-in () {
+  max-width: calc(100% - #{$margin-xl * 2});
+  padding: $margin-xl $margin-xl * 2;
+  border-radius: $border-radius-box-base;
+  box-shadow: $box-shadow-far;
+
+  @include size('phone') {
+    padding: $margin-xl;
+  }
+}
+
+// Flex
+@mixin flex-center-content () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin background-image () {
+  @include position();
+  @include full-size;
+
+  &-image {
+    @include image-cover;
+  }
+}
